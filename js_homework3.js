@@ -25,7 +25,7 @@ function pow(number, power){
             if(number < 0){
                 return 'Не можна брати корінь від відємного числа'
             } else{
-            return 1 / number ** power //Так само не знав як без **
+            return 1 / number ** (power * -1) //Так само не знав як без **
             }
         }
         while(power < -1){ //В цьому циклі зводжу у ступінь якщо ступінь відємне ціле число
@@ -39,7 +39,7 @@ function pow(number, power){
     }
 }
 
-//console.log(pow(2,1.5)) Не зміг придумати як робити коли ступінь не ціле число більше 1, там математично складно
+//console.log(pow(2,1.5)) Не зміг придумати як робити коли ступінь не ціле число більше 1, або менше -1, там математично складно
 //Коли ступінь ціле позитивне або відємне число зробив без ** та функцій які не розбирали
 
 console.log(pow(2, 3))
@@ -54,9 +54,10 @@ console.log(pow(2+2,2+1))
 console.log(pow(0.5,2))
 console.log(pow(0.5,0.5))
 console.log(pow(3,0.5))
-console.log(pow(3,-0.5))
+console.log(pow(3,-0.3))
 console.log(pow(-3,0.5))
 console.log(pow(0.5,-0.5))
 console.log(pow(-0.5,0.5))
 console.log(pow(100,0.3))
 console.log(pow(100,1))
+console.log(pow(3,-0.3))
